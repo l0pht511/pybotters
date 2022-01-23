@@ -101,30 +101,30 @@ class MessageType(Enum):
     PERIODIC = auto()
 
 
-class Symbol(Enum):
+class Symbol(str, Enum):
     """
     取り扱い銘柄
     """
 
-    BTC = auto()
-    ETH = auto()
-    BCH = auto()
-    LTC = auto()
-    XRP = auto()
-    BTC_JPY = auto()
-    ETH_JPY = auto()
-    BCH_JPY = auto()
-    LTC_JPY = auto()
-    XRP_JPY = auto()
+    BTC = 'BTC' 
+    ETH = 'ETH'
+    BCH = 'BCH'
+    LTC = 'LTC'
+    XRP = 'XRP'
+    BTC_JPY = 'BTC_JPY'
+    ETH_JPY = 'ETH_JPY'
+    BCH_JPY = 'BCH_JPY'
+    LTC_JPY = 'LTC_JPY'
+    XRP_JPY = 'XRP_JPY'
 
 
-class OrderSide(Enum):
+class OrderSide(str, Enum):
     """
     売買区分
     """
 
-    BUY = auto()
-    SELL = auto()
+    BUY = 'BUY'
+    SELL = 'SELL'
 
 
 class ExecutionType(Enum):
